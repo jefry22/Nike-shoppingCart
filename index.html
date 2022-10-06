@@ -22,8 +22,8 @@
                 <li><a href="">50% descuento</a></li>
             </ul>
             <div class="shopping-cart">
-                <img src="./Zapatillas/shopping-bag.png" alt="" class="icon-shopping">
-                <div class="amount">1</div>
+                <div class="amount">0</div>
+                <img src="./Zapatillas/shopping-bag.png" alt="" class="icon-shopping" id="btn-cart">
             </div>
         </nav>
         <section class="hero">
@@ -39,19 +39,43 @@
             <p class="title title-primary">NIKE</p>
             <p class="title title-secundary">PERÚ</p>
         </section>
+        <div class="desktop-menu actived">
+            <ul>
+                <li class="submenu">
+                    <table id="lista-carrito" class="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                    <div class="container-eliminar">
+                    <a href="#" id="vaciar-carrito" class="btn-eliminar">Vaciar Carrito</a>
+                </div>
+                </li>
+            </ul>
+        </div>
     </header>
 
-    
+
 
     <section class="container-tendencia">
         <h2 class="title-tendencia">Tendencia</h2>
-        <div class="container-card-tendencia">
+
+        <div class="container-card-tendencia" id="lista_product">
 
             <div class="card">
                 <div class="card-img">
                     <img src="./Zapatillas/lebron-9-low-zapatillas-XVC7M0.jpg" alt="">
                     <div class="btn-heart">
-                        <img src="./Zapatillas/heart (2).png" alt="">
+                        <img src="./Zapatillas/heart (2).png" class="icon-heart" alt="">
                     </div>
                     <div class="container-price">
                         <p class="price">$184.00</p>
@@ -63,8 +87,8 @@
                     </div>
                 </div>
                 <div class="card-description">
-                        <p class="product-name">AIR JORDAN XXXVI LOW LUKA</p>
-                        <a href="#" data-id="1" class="btn-add"><img src="./Zapatillas/shopping-bag.png" alt=""></a>    
+                    <p class="product-name">AIR JORDAN XXXVI LOW LUKA</p>
+                    <a href="#" data-id="1"><img src="./Zapatillas/shopping-bag.png" alt="" class="btn-add"></a>
                 </div>
             </div>
 
@@ -72,7 +96,7 @@
                 <div class="card-img">
                     <img src="./Zapatillas/Jordan Series ES.webp" alt="">
                     <div class="btn-heart">
-                        <img src="./Zapatillas/heart (2).png" alt="">
+                        <img src="./Zapatillas/heart (2).png" class="icon-heart" alt="">
                     </div>
                     <div class="container-price">
                         <p class="price">$184.00</p>
@@ -84,8 +108,8 @@
                     </div>
                 </div>
                 <div class="card-description">
-                        <p class="product-name">AIR JORDAN XXXVI LOW LUKA</p>
-                        <a href="#" data-id="2" class="btn-add"><img src="./Zapatillas/shopping-bag.png" alt=""></a>    
+                    <p class="product-name">AIR JORDAN XXXVI LOW LUKA</p>
+                    <a href="#" data-id="2"><img src="./Zapatillas/shopping-bag.png" alt="" class="btn-add"></a>
                 </div>
             </div>
 
@@ -93,7 +117,7 @@
                 <div class="card-img">
                     <img src="./Zapatillas/Nike ACG Air Mowabb.webp" alt="">
                     <div class="btn-heart">
-                        <img src="./Zapatillas/heart (2).png" alt="">
+                        <img src="./Zapatillas/heart (2).png" class="icon-heart" alt="">
                     </div>
                     <div class="container-price">
                         <p class="price">$184.00</p>
@@ -105,8 +129,8 @@
                     </div>
                 </div>
                 <div class="card-description">
-                        <p class="product-name">AIR JORDAN XXXVI LOW LUKA</p>
-                        <a href="#" data-id="3" class="btn-add"><img src="./Zapatillas/shopping-bag.png" alt=""></a>    
+                    <p class="product-name">AIR JORDAN XXXVI LOW LUKA</p>
+                    <a href="#" data-id="3"><img src="./Zapatillas/shopping-bag.png" alt="" class="btn-add"></a>
                 </div>
             </div>
 
@@ -114,7 +138,7 @@
                 <div class="card-img">
                     <img src="./Zapatillas/Nike Air Zoom Pegasus 39.webp" alt="">
                     <div class="btn-heart">
-                        <img src="./Zapatillas/heart (2).png" alt="">
+                        <img src="./Zapatillas/heart (2).png" class="icon-heart" alt="">
                     </div>
                     <div class="container-price">
                         <p class="price">$184.00</p>
@@ -126,8 +150,8 @@
                     </div>
                 </div>
                 <div class="card-description">
-                        <p class="product-name">AIR JORDAN XXXVI LOW LUKA</p>
-                        <a href="#" data-id="4" class="btn-add"><img src="./Zapatillas/shopping-bag.png" alt=""></a>    
+                    <p class="product-name">AIR JORDAN XXXVI LOW LUKA</p>
+                    <a href="#" data-id="4"><img src="./Zapatillas/shopping-bag.png" alt="" class="btn-add"></a>
                 </div>
             </div>
 
@@ -135,7 +159,7 @@
                 <div class="card-img">
                     <img src="./Zapatillas/Nike Zoom Rival.webp" alt="">
                     <div class="btn-heart">
-                        <img src="./Zapatillas/heart (2).png" alt="">
+                        <img src="./Zapatillas/heart (2).png" class="icon-heart" alt="">
                     </div>
                     <div class="container-price">
                         <p class="price">$184.00</p>
@@ -147,8 +171,8 @@
                     </div>
                 </div>
                 <div class="card-description">
-                        <p class="product-name">AIR JORDAN XXXVI LOW LUKA</p>
-                        <a href="#" data-id="5" class="btn-add"><img src="./Zapatillas/shopping-bag.png" alt=""></a>    
+                    <p class="product-name">AIR JORDAN XXXVI LOW LUKA</p>
+                    <a href="#" data-id="5"><img src="./Zapatillas/shopping-bag.png" alt="" class="btn-add"></a>
                 </div>
             </div>
 
@@ -156,7 +180,7 @@
                 <div class="card-img">
                     <img src="./Zapatillas/Nike Mercurial.webp" alt="">
                     <div class="btn-heart">
-                        <img src="./Zapatillas/heart (2).png" alt="">
+                        <img src="./Zapatillas/heart (2).png" class="icon-heart" alt="">
                     </div>
                     <div class="container-price">
                         <p class="price">$184.00</p>
@@ -168,8 +192,8 @@
                     </div>
                 </div>
                 <div class="card-description">
-                        <p class="product-name">AIR JORDAN XXXVI LOW LUKA</p>
-                        <a href="#" data-id="6" class="btn-add"><img src="./Zapatillas/shopping-bag.png" alt=""></a>    
+                    <p class="product-name">AIR JORDAN XXXVI LOW LUKA</p>
+                    <a href="#" data-id="6"><img src="./Zapatillas/shopping-bag.png" alt="" class="btn-add"></a>
                 </div>
             </div>
 
@@ -177,7 +201,7 @@
                 <div class="card-img">
                     <img src="./Zapatillas/Nike Dunk High 1985SP.webp" alt="">
                     <div class="btn-heart">
-                        <img src="./Zapatillas/heart (2).png" alt="">
+                        <img src="./Zapatillas/heart (2).png" class="icon-heart" alt="">
                     </div>
                     <div class="container-price">
                         <p class="price">$184.00</p>
@@ -189,8 +213,8 @@
                     </div>
                 </div>
                 <div class="card-description">
-                        <p class="product-name">AIR JORDAN XXXVI LOW LUKA</p>
-                        <a href="#" data-id="7" class="btn-add"><img src="./Zapatillas/shopping-bag.png" alt=""></a>    
+                    <p class="product-name">AIR JORDAN XXXVI LOW LUKA</p>
+                    <a href="#" data-id="7"><img src="./Zapatillas/shopping-bag.png" alt="" class="btn-add"></a>
                 </div>
             </div>
 
@@ -198,7 +222,7 @@
                 <div class="card-img">
                     <img src="./Zapatillas/Nike Zoom Mercurial Superfly 9.webp" alt="">
                     <div class="btn-heart">
-                        <img src="./Zapatillas/heart (2).png" alt="">
+                        <img src="./Zapatillas/heart (2).png" class="icon-heart" alt="">
                     </div>
                     <div class="container-price">
                         <p class="price">$184.00</p>
@@ -210,12 +234,13 @@
                     </div>
                 </div>
                 <div class="card-description">
-                        <p class="product-name">AIR JORDAN XXXVI LOW LUKA</p>
-                        <a href="#" data-id="8" class="btn-add"><img src="./Zapatillas/shopping-bag.png" alt=""></a>    
+                    <p class="product-name">AIR JORDAN XXXVI LOW LUKA</p>
+                    <a href="#" data-id="8"><img src="./Zapatillas/shopping-bag.png" alt="" class="btn-add"></a>
                 </div>
             </div>
         </div>
     </section>
 </body>
+<script src="app.js"></script>
 
 </html>

@@ -21,7 +21,9 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
+header{
+    position: relative;
+}
 nav img {
     width: 49px;
 }
@@ -85,7 +87,7 @@ nav a:hover {
     height: 100vh;
     background-color: var(--bg-color-primary);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .redes-sociales {
@@ -250,4 +252,78 @@ nav a:hover {
 .card-description img {
     width: 25px;
     height: 25px;
+}
+.desktop-menu{
+    position: absolute;
+    width: 420px;
+    top: 60px;
+    right: 60px;
+    z-index: 2;
+    background-color: rgb(17, 16, 16);
+    animation-name: moverContainer;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+    border: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(255, 249, 34), rgb(255, 0, 0), rgb(29, 86, 255));
+    border-image-slice: 1;
+}
+
+@keyframes moverContainer {
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+.lista-carrito{
+    width: 420px;
+    color: white;
+    /* background-color: rebeccapurple; */
+    font-size: 14px;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
+    border-image-slice: 1;
+}
+thead tr th{
+    padding:8px;
+    text-align: center;
+}
+tbody tr td{
+    width: 110px;
+    text-align: center;
+    
+}
+tbody tr td img{
+    width: 80px;
+    border-radius: 5px;
+}
+.container-eliminar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}   
+.actived{
+    display: none;
+}
+.btn-eliminar{
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(0.25turn, rgba(255, 249, 34), rgb(255, 0, 0), rgb(29, 86, 255));;
+    padding: 8px;
+    width: 40%;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.eliminar-product{
+    
+    text-decoration: none;
+    border-radius: 50%;
+    background: rgb(0, 17, 255);
+    padding: 8px 10px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
 }
