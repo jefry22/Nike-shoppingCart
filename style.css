@@ -198,11 +198,7 @@ nav a:hover {
     top: 10px;
     right: 10px;
     cursor: pointer;
-}
-
-.btn-heart img {
-    width: 25px;
-    height: 25px;
+    font-size: 20px;
 }
 
 .container-colors {
@@ -306,7 +302,7 @@ tbody tr td img{
 .actived{
     display: none;
 }
-.btn-eliminar{
+.add-product{
     text-align: center;
     text-decoration: none;
     background: linear-gradient(0.25turn, rgba(255, 249, 34), rgb(255, 0, 0), rgb(29, 86, 255));;
@@ -326,4 +322,7 @@ tbody tr td img{
     font-size: 12px;
     color: rgb(255, 255, 255);
     font-weight: bold;
+}
+.actived-color{
+    color: red;
 }

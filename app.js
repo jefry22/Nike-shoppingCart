@@ -3,15 +3,28 @@ const lista_product = document.querySelector('#lista_product');
 const btn_cart = document.querySelector('#btn-cart');
 const container_shopping = document.querySelector('.desktop-menu');
 const lista_carrito = document.querySelector('#lista-carrito tbody');
+const icon_heart  =document.querySelectorAll('.icon-heart');
+const add_list = document.querySelector('.submenu');
+
 let array_product = [];
+
 
 (() => {
     lista_product.addEventListener('click', addProduct);
     btn_cart.addEventListener('click', listCart);
     container_shopping.addEventListener('click',deleteProduct);
+    iconheart();
+    add_list.addEventListener('click',addShopping);
 })()
 
-
+function iconheart(){
+    icon_heart.forEach(action=>{
+        action.addEventListener('click',function(e){
+            e.target.classList.toggle('actived-color')
+            console.log();
+        })
+    })
+}
 function deleteProduct(e){
     if(e.target.classList.contains('eliminar-product')){
         const id = e.target.getAttribute('data-id');
@@ -36,10 +49,9 @@ function deleteProduct(e){
             calcProduct();
             createHtml();
         });
+       
     }
 }
-
-
 
 function listCart() {
     container_shopping.classList.toggle('actived');
@@ -54,16 +66,11 @@ function addProduct(e) {
             imagen: card.querySelector('img').src,
             nombre: card.querySelector('.product-name').textContent,
             precio: card.querySelector('.price').textContent,
-            icon_heart: card.querySelector('.icon-heart').src,
-            colors: [
-                card.querySelector('.color_1'),
-                card.querySelector('.color_2'),
-                card.querySelector('.color_3'),
-            ],
             cantidad: 1,
         }
-        const existe_product = array_product.some(product => product.id == obj_product.id);
 
+
+        const existe_product = array_product.some(product => product.id == obj_product.id);
         if (existe_product) {
             const products = array_product.map(product => {
                 if (product.id == obj_product.id) {
@@ -78,12 +85,10 @@ function addProduct(e) {
         } else {
             array_product.push(obj_product);
         }
-
         calcProduct();
         createHtml();
     }
 }
-
 
 function calcProduct(){
     const total_product = array_product.map(e => {
@@ -105,10 +110,10 @@ function createHtml() {
         const row = document.createElement('tr');
         row.innerHTML =
             `
-        <td><img src="${product.imagen}"/></td>
-        <td>${product.nombre}</td>
-        <td>${product.precio}</td>
-        <td>${product.cantidad}</td>
+        <td class="img_product"><img src="${product.imagen}"/></td>
+        <td class="product_name">${product.nombre}</td>
+        <td class="product_price">${product.precio}</td>
+        <td class="product_count">${product.cantidad}</td>
         <td><a href="#" class="eliminar-product" data-id="${product.id}">X</a></td>
         `
         lista_carrito.append(row);
@@ -117,7 +122,25 @@ function createHtml() {
 
 function limpiar() {
     while (lista_carrito.firstChild) {
-        lista_carrito.removeChild(lista_carrito.firstChild);
+        lista_carrito.removeChild(lista_carrito.firstChild);    
     }
 }
 
+let product_shopping = [];
+
+function addShopping(e){
+    if(e.target.classList.contains('add-product')){
+        const products =e.target.parentElement.parentElement; 
+        let tr = products.querySelectorAll('tbody tr');
+        tr.forEach(e=>{
+            const add_product = {
+                img:e.querySelector('img').src,
+                nameProduct:e.querySelector('.product_name').textContent,
+                price:e.querySelector('.product_price').textContent,
+                cantidad:e.querySelector('.product_count').textContent,
+            }
+            console.log(add_product)
+        })
+        
+    }
+}
