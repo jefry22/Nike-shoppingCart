@@ -359,13 +359,12 @@ tbody tr td img{
       
     }
     .title-primary{
-        /* display: none; */
-        top: 25%;
-        right: 20%;
+        display: none;
     }
     .title-secundary{
         /* display: none; */
-        bottom: 20%;
+        top: 25%;
+        right: 20%;
     }
     .container-tendencia{
         /* background-color: #FF00B8; */
