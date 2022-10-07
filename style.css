@@ -330,10 +330,13 @@ tbody tr td img{
 
 
 @media (max-width:640px) {
+    .hero{
+        height: 100vh;
+    }
     .container-principal{
         width: 100%;
     }
-    nav{
+    nav ul{
         display: none;
     }
     .redes-sociales{
@@ -359,12 +362,12 @@ tbody tr td img{
       
     }
     .title-primary{
-        display: none;
+        /* display: none; */
+        top: 30%;
+        right: 20%;
     }
     .title-secundary{
-        /* display: none; */
-        top: 25%;
-        right: 20%;
+        display: none;
     }
     .container-tendencia{
         /* background-color: #FF00B8; */
@@ -408,5 +411,56 @@ tbody tr td img{
     align-items: center;
     justify-content: space-between;
     background-color: var(--bg-color-primary);
+}
+
+.desktop-menu{
+    position: absolute;
+    width: 370px;
+    top: 60px;
+    right: 2px;
+}
+
+@keyframes moverContainer {
+    0%{
+        transform: translateX(-80px);
+    }
+    100%{
+        transform: translateX(2px);
+    }
+}
+.lista-carrito{
+    width: 100%;
+}
+thead tr th{
+    padding:8px;
+    text-align: center;
+}
+tbody tr td{
+    width: 110px;
+    text-align: center;
+    
+}
+tbody tr td img{
+    width: 80px;
+    border-radius: 5px;
+}
+.container-eliminar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}   
+.actived{
+    display: none;
+}
+.add-product{
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(0.25turn, rgba(255, 249, 34), rgb(255, 0, 0), rgb(29, 86, 255));;
+    padding: 8px;
+    width: 60%;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 }
