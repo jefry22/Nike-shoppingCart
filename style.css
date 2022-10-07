@@ -326,3 +326,69 @@ tbody tr td img{
 .actived-color{
     color: red;
 }
+
+
+
+@media (max-width:640px) {
+    .container-principal{
+        width: 100%;
+    }
+    nav{
+        display: none;
+    }
+    .redes-sociales{
+        display: none;  
+    }
+    .img-container{
+        display: none;
+    }
+    .title-primary{
+        display: none;
+    }
+    .title-secundary{
+        display: none;
+    }
+    .container-tendencia{
+        /* background-color: #FF00B8; */
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    .container-tendencia {
+    width: 100%;
+    padding: 40px;
+    }
+
+    .container-card-tendencia {
+    width: 100%;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 10px;
+}
+    .card {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 10px;
+    }
+
+.card-img {
+    position: relative;
+}
+
+.card-img img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+.card-description {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-color-primary);
+}
+}
